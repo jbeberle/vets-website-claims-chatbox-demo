@@ -1,0 +1,6 @@
+{
+  "data": {
+    "type": "feature_toggles",
+    "features": [{ "name": "facilities_ppms_suppress_community_care", "value": false }]
+  }
+}

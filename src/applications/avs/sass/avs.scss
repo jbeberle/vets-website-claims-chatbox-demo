@@ -1,0 +1,26 @@
+@import "~@department-of-veterans-affairs/formation/sass/shared-variables";
+
+/* Breadcrumb arrow */
+.avs-breadcrumb a::before {
+    content: " \2039 ";
+    display: inline-block;
+    padding: 0 2.4px;
+}
+
+.appointment-list {
+    list-style: none;
+}
+
+.clinic-information i {
+    padding-right: 0.5em;
+}
+
+/* Lab results */
+.lab-results h4 {
+    margin-bottom: 0;
+}
+
+/* Miscellaneous */
+hr {
+    margin: 0;
+}

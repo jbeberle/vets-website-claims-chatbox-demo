@@ -1,0 +1,198 @@
+@import "~@department-of-veterans-affairs/formation/sass/shared-variables";
+@import "~@department-of-veterans-affairs/formation/sass/modules/m-process-list";
+@import "~@department-of-veterans-affairs/formation/sass/modules/m-form-process";
+@import "../../../../platform/forms/sass/m-schemaform";
+@import "~@department-of-veterans-affairs/formation/sass/modules/m-modal";
+@import "~@department-of-veterans-affairs/formation/sass/modules/m-omb-info";
+@import "../../../../platform/forms/sass/m-form-confirmation";
+@import "../../shared/sass/appeals";
+
+.schemaform-intro {
+  padding: 0 0 2rem 0;
+
+  .process-step:last-child {
+    padding-bottom: 0;
+  }
+
+  .omb-info--container {
+    margin-top: 1em;
+  }
+}
+
+/* Contested issue cards (contested issue page & review/submit page)
+ * This could go in the schemaform css, it's used in form 526 & HLR
+ */
+ .issues {
+
+  .widget-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .widget-checkbox-wrap {
+      margin: 0;
+      width: 4rem;
+      min-width: 4rem;
+
+      label {
+        margin-top: 0;
+      }
+
+      [type="checkbox"] {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0;
+      }
+    }
+
+    .widget-content {
+      width: 100%;
+      margin-inline-start: 0; /* override user agent */
+      text-align: left;
+      margin: 0;
+    }
+    .widget-content.widget-edit {
+      margin-top: 0;
+      margin-right: 0;
+      display: flex;
+
+      .widget-content-wrap {
+        margin-top: 3rem;
+        margin-right: 0.5rem;
+        width: 100%;
+      }
+
+      .edit {
+        margin-top: 2rem;
+        /* position the edit button above the overlapping label */
+        position: relative;
+        z-index: 1;
+        align-self: center;
+      }
+    }
+    .edit-issue-link:visited {
+      color: inherit;
+    }
+  }
+
+  .checkbox-hidden {
+    .widget-content {
+      margin: 2rem 0 0 0;
+    }
+  }
+}
+
+ul.issues-summary,
+ul.issues,
+.usa-accordion-bordered ul li ul.issues {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 481px) {
+  .va-profile-wrapper button {
+    width: auto;
+  }
+}
+
+/* empty header on additional-issues-intro page */
+.schemaform-block-header:empty {
+  margin: 0;
+}
+
+.additional-issue {
+  .schemaform-label,
+  .usa-input-error {
+    margin-top: 0;
+  }
+}
+
+.form-checkbox.usa-input-error {
+  margin-top: 0;
+}
+
+/* request extension NOD v2 */
+article[data-location="extension-request"] {
+  fieldset fieldset {
+    margin: 0 !important;
+  }
+}
+
+/* contact info page */
+article[data-location="contact-information"] {
+  div[data-field-name="mobilePhone"] h3 {
+    margin-top: 0;
+  }
+  /* address modal is very tall and won't scroll without this fix */
+  .va-modal-body {
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
+
+article[data-location="add-issue"] {
+  /* Hide extra "Required" label */
+  p.label-description + span {
+    display: none;
+  }
+  .usa-input-error,
+  label {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+/* override formation to maintain margin between checkboxes */
+.usa-input-error label {
+  margin-top: 3rem;
+}
+#root_otherEntry-label {
+  margin-top: 2rem;
+}
+.usa-input-error > label {
+  margin-top: 0;
+}
+
+/* Show issues list */
+.capitalize {
+  text-transform: capitalize;
+}
+
+form.rjsf > fieldset {
+  margin-top: 0 !important;
+}
+
+/* additional evidence */
+article[data-location$="/upload"] {
+  #root_evidence_add_label {
+    margin-top: 0;
+  }
+  .schemaform-file-list {
+    p {
+      margin: 0;
+    }
+    strong {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+/* board review option & hearing type pages */
+#root_hearingTypePreference-label,
+#root_boardReviewOption-label {
+  margin-bottom: 2rem;
+}
+
+article[data-location="review-and-submit"] {
+  /* hide when reviewing content. Shows when editing */
+  dt .hide-on-review, dd .hide-on-review {
+    display: none;
+  }
+  dt strong.opt-in-title {
+    font-weight: normal;
+  }
+  dd {
+    word-break: break-all;
+  }
+}

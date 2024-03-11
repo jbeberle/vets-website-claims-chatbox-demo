@@ -1,0 +1,73 @@
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@department-of-veterans-affairs/formation/sass/shared-variables";
+@import "~@department-of-veterans-affairs/formation/sass/modules/m-process-list";
+@import "../../../platform/forms/sass/m-schemaform";
+
+@import "../new-appointment/sass/styles";
+@import "../appointment-list/sass/styles";
+@import "../covid-19-vaccine/sass/styles";
+@import "../appointment-list/sass/print";
+
+$vaos-loading-overlay: rgba($color-white, 0.9);
+
+.vaos-form__title,
+.vaos-u-text-transform--uppercase {
+  text-transform: uppercase;
+}
+
+h1:focus {
+  outline: none !important;
+}
+
+.vaos-u-word-break--break-word {
+  word-break: break-word;
+}
+
+.backLinkContainer {
+  display: flex;
+  flex-direction: row;
+
+}
+.vaos__loading-overlay {
+  background: $vaos-loading-overlay;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.vaos__loading-overlay-inner {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  max-width: 500px;
+  cursor: auto;
+
+  @include media($medium-screen) {
+    top: 40%;
+  }
+}
+
+.vaos__form-button-back {
+  order: 2;
+  width: 100%;
+  @media (min-width: $xsmall-screen) {
+    order: 1;
+    width: auto;
+  }
+}
+
+.vaos__form-button-next {
+  order: 1;
+  width: 100%;
+  @media (min-width: $xsmall-screen) {
+    order: 2;
+    width: auto;
+  }
+}

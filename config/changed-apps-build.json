@@ -1,0 +1,97 @@
+{
+  "apps": [
+    {
+      "rootFolder": "avs",
+      "slackGroup": "<@C04UBETRY8N>"
+    },
+    {
+      "rootFolder": "burials",
+      "slackGroup": "<@U0329KDCJ0Y> <@U031KTDNYEP>"
+    },
+    {
+      "rootFolder": "check-in",
+      "slackGroup": "@check-in-fe"
+    },
+    {
+      "rootFolder": "combined-debt-portal",
+      "slackGroup": "<@U0329KDCJ0Y> <@U031KTDNYEP>"
+    },
+    {
+      "rootFolder": "coronavirus-research",
+      "slackGroup": "@cto-health-products"
+    },
+    {
+      "rootFolder": "coronavirus-screener",
+      "slackGroup": "@cto-health-products"
+    },
+    {
+      "rootFolder": "education-letters",
+      "slackGroup": "<@U0243BHR2RZ> <@U026MB3UE5S> <@U024FPCTE6M>",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "enrollment-verification",
+      "slackGroup": "<@U0243BHR2RZ> <@U026MB3UE5S> <@U024FPCTE6M>",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "fry-dea",
+      "slackGroup": "<@U0243BHR2RZ> <@U026MB3UE5S> <@U024FPCTE6M>",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "gi",
+      "slackGroup": "<@U0243BHR2RZ> <@U026MB3UE5S> <@U024FPCTE6M>",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "health-care-supply-reordering",
+      "slackGroup": "<@C05DFSM57FW>"
+    },
+    {
+      "rootFolder": "login",
+      "slackGroup": "@vsp-identity-group"
+    },
+    {
+      "rootFolder": "medical-copays",
+      "slackGroup": "<@U0329KDCJ0Y> <@U031KTDNYEP>"
+    },
+    {
+      "rootFolder": "mhv-landing-page",
+      "slackGroup": "@mhv-on-va-gov-group"
+    },
+    {
+      "rootFolder": "mhv-inherited-proofing",
+      "slackGroup": "@vsp-identity-group"
+    },
+    {
+      "rootFolder": "terms-of-use",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "toe",
+      "slackGroup": "<@U0243BHR2RZ> <@U026MB3UE5S> <@U024FPCTE6M>",
+      "continuousDeployment": false
+    },
+    {
+      "rootFolder": "vaos",
+      "slackGroup": "@vaos-fe-dev"
+    },
+    {
+      "rootFolder": "lgy",
+      "slackGroup": "@benefits-app-builds"
+    },
+    {
+      "rootFolder": "claims-status",
+      "slackGroup": "@benefits-app-builds"
+    },
+    {
+      "rootFolder": "rated-disabilities",
+      "slackGroup": "@benefits-app-builds"
+    },
+    {
+      "rootFolder": "letters",
+      "slackGroup": "@benefits-app-builds"
+    }
+  ]
+}
